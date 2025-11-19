@@ -16,7 +16,7 @@ clc
 %   Generate_Pbox.m, Det_Box_Update.m, LocalFraction.m, Eberhard_pbox.mat
 
 
-% set the parameter for 
+% set the parameter for epsilon
 ep = 0.98;
 % generate the quantum behavior for the parameter epsilon
 p_ep = Generate_Pbox(ep);
@@ -33,3 +33,4 @@ p_Eberhard_eta = Det_Box_Update(eta, p_box);
 % calculate the local fraction of the updated behavior
 lf_ep_eta       = LocalFraction(p_ep_eta)
 lf_Eberhard_eta = LocalFraction(p_Eberhard_eta)
+
