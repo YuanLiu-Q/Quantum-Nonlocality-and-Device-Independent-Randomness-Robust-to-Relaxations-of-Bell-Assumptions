@@ -18,4 +18,4 @@ It is organised into three main components:
    This script computes the quantum adversary Eve’s guessing probability for Alice’s first measurement outcome, where both Alice’s and Bob’s input infomration is partially leaked, and conditioned on an observed CHSH value on the Alice–Bob system.  
 
 
-**Dependencies**: [CVX] and [MOSEK] for formulating and solving the semidefinite programs and linear programs; [Moment] for constructing moment and localizing matrices in Bell scenarios.
+**Dependencies**: [CVX] and [MOSEK] for formulating and solving the semidefinite programs and linear programs; [Moment] (https://github.com/ajpgarner/moment) for constructing moment and localizing matrices in Bell scenarios.
