@@ -13,7 +13,7 @@ clc
 %   - computes the local fraction of the updated behaviors using
 %     LocalFraction.
 % Dependencies:
-%   Generate_Pbox.m, Det_Box_Update.m, LocalFraction.m, Eberhard_pbox.mat
+%   Generate_Pbox.m, Det_Box_Update.m, LocalFraction.m, Eberhard_pbox.mat and CVX
 
 
 % set the parameter for epsilon
@@ -33,4 +33,5 @@ p_Eberhard_eta = Det_Box_Update(eta, p_box);
 % calculate the local fraction of the updated behavior
 lf_ep_eta       = LocalFraction(p_ep_eta)
 lf_Eberhard_eta = LocalFraction(p_Eberhard_eta)
+
 
