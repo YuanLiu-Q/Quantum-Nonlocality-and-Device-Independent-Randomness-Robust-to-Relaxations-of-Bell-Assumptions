@@ -1,7 +1,7 @@
 function lf = LocalFraction(p_cell)
 % LocalFraction:  Compute the local fraction of the behavior p_cell.
 %   - p_cell{x,y} is a |A|-by-|B| matrix of probabilities p(a,b|x,y)
-% Dependencies: D_polytope.m
+% Dependencies: D_polytope.m and CVX
 
 m = size(p_cell, 1);
 k = size(p_cell{1,1}, 1);
@@ -33,3 +33,4 @@ cvx_end
 
 lf = cvx_optval;
 end
+
